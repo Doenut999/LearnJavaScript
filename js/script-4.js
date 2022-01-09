@@ -26,7 +26,7 @@ console.log(me.height);
 //[call], [apply], [bind]
 //use apply when you want to use additional arguments (in an array)
 //use call when it is a single  argument
-const goob = {
+const jsObject = {
     title: "Mr.",
     name: "Alfred",
     surname: "Lotsu",

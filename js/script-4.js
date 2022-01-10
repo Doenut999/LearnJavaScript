@@ -73,7 +73,6 @@ console.log(o4)
 
 
 //spreading
-
 let bib = [1,2,3]
 let bibPlus = [...bib, 4,5,6]
 console.log(bibPlus)

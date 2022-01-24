@@ -91,3 +91,92 @@ const sampleObject = {
     friends: 6,
     car: "Mystery Machine"
 }
+
+//example Map
+
+const personMap = new Map()
+personMap.set(1, "Shelter")
+personMap.set(2, "Stella")
+personMap.set(3, "Jenny")
+personMap.set(4, "Thelma")
+personMap.set(5, "Alfred")
+personMap.set(6, "Henry")
+personMap.set(7, "Abigail")
+personMap.set(8, "Tonia")
+
+console.log(personMap.get(6))
+console.log(personMap.has(4))
+
+// console.log(personMap.keys())
+// console.log(personMap.values())
+// console.log(personMap.entries())
+console.log('/////////////')
+
+console.log("keys")
+for (let i of personMap.keys()){
+    console.log(i)
+}
+for (let i of personMap.values()){
+    console.log(i)
+}
+console.log("entries")
+
+for (let i of personMap.entries()){
+    console.log(i)
+}
+
+//weak maps has only non-primitive keys, and they do not support iteration
+
+//function is a representation of a series of instructions we want to undertake
+
+function printRandomSentences(){
+    console.log("I am really handsome")
+    console.log("I am not smiling as I write this")
+    console.log("I am loving JavaScript now")
+}
+
+printRandomSentences()
+
+
+//function expressions are variables given values of anonymous functions(to be discussed in greater detail later)
+
+let u = function (){
+    console.log(1)
+    console.log(2)
+    console.log(3)
+}
+
+//call the function by simply writing the value and parentheses, like you would call any normal function
+u()
+
+//function parameters are the values {fed} to function calls
+
+/**
+ *
+ * @param name {string}
+ * @returns {string}
+ */
+function returnName(name){
+    return name
+}
+
+//also has default parameters for when no parameter is supplied
+
+//!!default parameter should be the last
+/**
+ *
+ * @param a {number}
+ * @param b {number}
+ * @returns {number}
+ */
+function sum(a, b=10){
+    return a+b
+}
+
+console.log(sum(12));
+console.log(sum(3, 9));
+
+//use var let and const
+//var is outmoded --should not be used
+//let === mutable (changeable) variables
+//const == immutable/constant (non-changeable) variables
